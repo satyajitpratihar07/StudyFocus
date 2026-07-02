@@ -209,7 +209,6 @@ Complete Session
         ▼
 Track Progress
 ```
-
 ---
 
 # 🤝 Contributing
