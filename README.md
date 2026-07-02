@@ -175,8 +175,6 @@ npm install
 npm run dev
 ```
 
----
-
 # 🎯 Why StudyFocus?
 
 ✅ Easy Study Planning
