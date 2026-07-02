@@ -159,7 +159,6 @@ studyfocus/
 └── README.md
 ```
 
----
 
 # 🚀 Installation
 
