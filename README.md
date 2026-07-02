@@ -1,10 +1,10 @@
 <div align="center">
 
-# 🚀 StudyFocus 
+# 📚 StudyFocus
 
-### 🧠 AI-Powered Study Guide & Smart Learning Platform
+### Smart Study Planner • Schedule Tracker • Study Timer • Reminder App
 
-<img src="./assets/banner.png" width="100%" alt="StudyFocus Banner"/>
+<img src="./assets/banner.png" width="100%" alt="StudyFocus Banner">
 
 <p align="center">
 
@@ -12,182 +12,155 @@
 <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react"/>
 <img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript"/>
 <img src="https://img.shields.io/badge/TailwindCSS-38BDF8?style=for-the-badge&logo=tailwind-css"/>
-<img src="https://img.shields.io/badge/AI-Powered-8A2BE2?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Open%20Source-❤-red?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Productivity-App-success?style=for-the-badge"/>
 
-</p>
+### Plan Better • Stay Consistent • Achieve More
 
-<p align="center">
-
-Transform PDFs, Images, Notes and Lectures into intelligent study guides,
-AI quizzes, flashcards and personalized learning experiences.
-
-</p>
+</div>
 
 ---
 
-## 🌐 Live Website
+# 🌐 Live Demo
 
-### 🔗 https://studyfocus-org.vercel.app/
-
----
-
-# ✨ Preview
-
-<img src="./assets/dashboard.png" width="100%"/>
+👉 https://studyfocus-org.vercel.app/
 
 ---
 
 # 📖 About
 
-StudyFocus is an AI-powered educational platform that converts study materials into structured learning content.
+StudyFocus is a modern productivity platform built for students to organize their daily learning routine.
 
-Instead of manually preparing notes and questions, students simply upload their files and StudyFocus automatically generates organized study guides, quizzes, flashcards and learning analytics.
+Instead of forgetting study sessions or losing track of tasks, StudyFocus helps users create personalized study schedules, set reminders, track completed sessions, and stay focused using an integrated study timer.
 
-Designed for school students, college students, competitive exam aspirants and lifelong learners.
-
----
-
-# ✨ Core Features
-
-## 📄 Smart File Upload
-
-Supports
-
-- PDF
-- Word
-- PPT
-- Images
-- Audio
-- Video
-
---
-
-## 🤖 AI Study Guide Generator
-
-Automatically creates
-
-✔ Organized Chapters
-
-✔ Key Concepts
-
-✔ Definitions
-
-✔ Important Topics
-
-✔ Learning Objectives
-
-✔ Estimated Study Time
+Whether you're preparing for school exams, college assignments, or competitive exams, StudyFocus keeps your study journey organized and consistent.
 
 ---
 
-## 📝 AI Quiz Generator
+# ✨ Features
 
-Generate unlimited
+## 📅 Study Schedule
 
-- MCQ
-- True / False
-- Short Answer
-- AI Evaluation
-
-<img src="./assets/quiz.png"/>
-
----
-
-## 🧠 Flashcards
-
-Instant AI-generated flashcards for faster revision.
-
-<img src="./assets/flashcards.png"/>
+- Create daily study plans
+- Organize subjects
+- Weekly planner
+- Monthly schedule
+- Easy task management
 
 ---
 
-## 📈 Progress Tracking
+## ⏰ Smart Study Reminder
 
-Track
+Never miss a study session.
 
-- Completed Topics
-- Quiz Scores
-- Learning Progress
-- Weak Areas
+✔ Custom reminders
 
-<img src="./assets/progress.png"/>
+✔ Notification support
 
----
+✔ Daily reminders
 
-## 📅 Study Planner
-
-Organize
-
-✔ Subjects
-
-✔ Daily Tasks
-
-✔ Study Schedule
-
-✔ Learning Goals
-
-<img src="./assets/planner.png"/>
+✔ Weekly reminders
 
 ---
 
-# 📱 Responsive Design
+## ⏱ Study Timer
 
-Desktop ✔
+Stay focused with a built-in study timer.
 
-Tablet ✔
+- Focus Sessions
+- Break Sessions
+- Session Tracking
+- Productivity Timer
 
-Mobile ✔
+---
 
-<img src="./assets/mobile.png"/>
+## ✅ Task Tracking
+
+Track your progress effortlessly.
+
+- Completed Tasks
+- Pending Tasks
+- Daily Goals
+- Study History
+
+---
+
+## 📊 Progress Analytics
+
+Monitor your learning consistency.
+
+- Study Streak
+- Total Study Time
+- Daily Progress
+- Weekly Reports
+
+---
+
+## 📱 Responsive Design
+
+✔ Desktop
+
+✔ Tablet
+
+✔ Mobile
 
 ---
 
 # 🖼 Screenshots
 
-| Dashboard | Upload |
-|------------|--------|
-| <img src="./assets/dashboard.png"/> | <img src="./assets/upload.png"/> |
+## Dashboard
+
+<img src="./assets/dashboard.png" width="100%">
 
 ---
 
-| Quiz | Flashcards |
-|------|------------|
-| <img src="./assets/quiz.png"/> | <img src="./assets/flashcards.png"/> |
+## Study Schedule
+
+<img src="./assets/schedule.png" width="100%">
 
 ---
 
-| Progress | Planner |
-|-----------|----------|
-| <img src="./assets/progress.png"/> | <img src="./assets/planner.png"/> |
+## Study Timer
+
+<img src="./assets/timer.png" width="100%">
 
 ---
 
-# ⚡ Tech Stack
+## Reminder
 
-| Frontend | Backend | AI | Database |
-|-----------|----------|----------|-----------|
-| Next.js | Node.js | OpenAI API | PostgreSQL |
-| React | Express | Gemini | Prisma |
-| Tailwind CSS | API Routes | AI Models | Neon |
+<img src="./assets/reminder.png" width="100%">
+
+---
+
+## Progress
+
+<img src="./assets/progress.png" width="100%">
+
+---
+
+# 🚀 Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Firebase / Supabase (if applicable)
+- Vercel
 
 ---
 
 # 📂 Project Structure
 
 ```
-StudyFocus/
+studyfocus/
 │
 ├── app/
 ├── components/
-├── hooks/
-├── lib/
 ├── public/
 ├── assets/
+├── hooks/
+├── lib/
 ├── styles/
-├── types/
 ├── utils/
-├── prisma/
 └── README.md
 ```
 
@@ -207,83 +180,49 @@ npm run dev
 
 ---
 
-# 🌟 Why StudyFocus?
+# 🎯 Why StudyFocus?
 
-✅ AI Generated Study Guides
+✅ Easy Study Planning
 
-✅ Personalized Quizzes
+✅ Smart Reminders
 
-✅ Flashcards
+✅ Study Timer
 
-✅ Multiple File Support
+✅ Task Management
 
 ✅ Progress Tracking
 
-✅ Course Planner
+✅ Responsive UI
 
-✅ Responsive Design
-
-✅ Modern UI
+✅ Fast Performance
 
 ---
 
-# 🎯 Perfect For
-
-🎓 School Students
-
-🎓 College Students
-
-📚 Competitive Exams
-
-💼 Professionals
-
-👨‍💻 Self Learners
-
----
-
-# 📊 Workflow
+# 📈 Workflow
 
 ```text
-Upload Files
-      │
-      ▼
- AI Analysis
-      │
-      ▼
-Study Guide Generation
-      │
-      ├────────► Flashcards
-      │
-      ├────────► Quiz
-      │
-      └────────► Progress Tracking
+Create Schedule
+        │
+        ▼
+Receive Reminder
+        │
+        ▼
+Start Study Timer
+        │
+        ▼
+Complete Session
+        │
+        ▼
+Track Progress
 ```
 
 ---
 
-# ❤️ Contributing
+# 🤝 Contributing
 
-Contributions are always welcome!
+Contributions are welcome!
 
-Fork 🍴
-
-Clone 📥
-
-Create Branch 🌿
-
-Commit 🚀
-
-Push 📤
-
-Pull Request ❤️
-
----
-
-# ⭐ Support
-
-If you like this project,
-
-Give it a ⭐ on GitHub.
+Fork → Clone → Commit → Push → Pull Request
 
 ---
 
@@ -291,12 +230,10 @@ Give it a ⭐ on GitHub.
 
 Made with ❤️ by **Satyajit Pratihar**
 
---
+---
 
 <div align="center">
 
-## 🌟 Learn Smarter. Study Faster. Achieve More.
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:8B5CF6&height=120&section=footer"/>
+### 📚 Stay Organized • Stay Focused • Study Smarter
 
 </div>
