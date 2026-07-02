@@ -291,7 +291,7 @@ Give it a ⭐ on GitHub.
 
 Made with ❤️ by **Satyajit Pratihar**
 
----
+--
 
 <div align="center">
 
