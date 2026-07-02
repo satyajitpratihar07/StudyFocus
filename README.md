@@ -17,7 +17,6 @@
 ### Plan Better • Stay Consistent • Achieve More
 
 </div>
-
 ---
 
 # 🌐 Live Demo
