@@ -61,7 +61,7 @@ Supports
 - Audio
 - Video
 
----
+--
 
 ## 🤖 AI Study Guide Generator
 
