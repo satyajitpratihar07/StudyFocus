@@ -4,7 +4,6 @@
 
 ### Smart Study Planner • Schedule Tracker • Study Timer • Reminder App
 
-<img src="./assets/banner.png" width="100%" alt="StudyFocus Banner">
 
 <p align="center">
 
