@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 StudyFocus
+# 🚀 StudyFocus 
 
 ### 🧠 AI-Powered Study Guide & Smart Learning Platform
 
