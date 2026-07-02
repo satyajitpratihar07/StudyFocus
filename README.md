@@ -17,8 +17,6 @@
 ### Plan Better • Stay Consistent • Achieve More
 
 </div>
-
-
 # 🌐 Live Demo
 
 👉 https://studyfocus-org.vercel.app/
