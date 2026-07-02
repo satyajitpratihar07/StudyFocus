@@ -20,7 +20,6 @@
 👉 https://studyfocus-org.vercel.app/
 
 ---
-
 # 📖 About
 
 StudyFocus is a modern productivity platform built for students to organize their daily learning routine.
