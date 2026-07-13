@@ -49,7 +49,6 @@ Built with React, Vite, Express, Firebase, and Google Gemini AI, StudyFocus deli
 - Responsive Cards
 
 ---
-
 ## 🤖 AI Study Assistant
 
 - Gemini AI Integration
