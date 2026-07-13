@@ -1,205 +1,391 @@
 # 🎓 StudyFocus — The Ultimate AI-Powered Academic Workspace
 
-[![Vite](https://img.shields.io/badge/Vite-8.1-blue.svg?logo=vite)](https://vite.dev/)
-[![React](https://img.shields.io/badge/React-19.2-cyan.svg?logo=react)](https://react.dev/)
-[![Express](https://img.shields.io/badge/Express-5.2-gray.svg?logo=express)](https://expressjs.com/)
-[![Firebase](https://img.shields.io/badge/Firebase-12.1-orange.svg?logo=firebase)](https://firebase.google.com/)
-[![Google Gemini](https://img.shields.io/badge/Google_Gemini-API_v2-purple.svg?logo=googlegemini)](https://ai.google.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/satya/StudyFocus/pulls)
+<p align="center">
 
-**StudyFocus** is a high-performance, responsive, and visually stunning academic productivity portal. Built on a modern glassmorphic theme with smooth micro-animations, it serves as a central hub for students to manage schedules, enter distraction-free focus zones, store private notes behind custom client-side encryption, and collaborate with an intelligent AI study assistant.
+![Vite](https://img.shields.io/badge/Vite-8.1-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Express](https://img.shields.io/badge/Express.js-5-000000?style=for-the-badge&logo=express&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-12-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Gemini AI](https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
 
----
+</p>
 
-## 🎨 Visual Showcase & Design System
+<p align="center">
 
-StudyFocus utilizes a cohesive, tokenized design system built using CSS Custom Properties supporting native **Fluid Transitions**, **Glassmorphism panels**, and a **Real-Time Light/Dark Theme** state.
+### 🚀 Smart Study Planner • AI Assistant • Focus Room • Secure Notes • Study Analytics
 
-![StudyFocus Dashboard Banner](./public/studyfocus-banner.png)
-
----
-
-## ✨ Features Checklist
-
-- [x] **📊 Bento-Style Analytics Dashboard**
-  - **3D Analog/Digital Clock**: Built using CSS 3D perspectives, rotating hand layers, and neon drop-shadows.
-  - **Dynamic SVG Area & Bar Charts**: Responsive data rendering for daily, weekly, monthly, and yearly study intervals.
-  - **Interactive Streaks**: Gamified study streaks tracking consistency.
-- [x] **🔒 Cryptographic Private Locker**
-  - Secured using an **interactive SVG pattern-drawing lock canvas** (3x3 pattern grid connecting dots).
-  - All content inside the locker is **fully client-side encrypted** using AES-256 (`crypto-js`) with key derivation from your drawn pattern. No raw content ever reaches the server.
-- [x] **🧑‍💻 Focus Room (Pomodoro)**
-  - Distraction-free interface with a configurable timer.
-  - YouTube player integration for streaming focus/ambient background tracks and playlists.
-  - Session-specific quick tasks checklist.
-- [x] **🤖 AI Study Planner & Assistant**
-  - Integrated chatbot widget powered by the **Google Gemini API** (`@google/genai`).
-  - Implements an automated **12-key round-robin API rotation** on the backend to avoid rate limits and guarantee maximum service uptime.
-  - Generates custom study planners and breaks down complex academic subjects into bite-sized tasks.
-- [x] **📅 Smart Study Scheduler**
-  - Responsive study block schedule planner.
-  - Automatically synchronizes client updates to **Cloud Firestore** using a debounced writing algorithm.
-- [x] **📧 Medicine & Study Reminders**
-  - Custom medicine schedule categorizations (Morning, Afternoon, Night slots).
-  - Integrates a Node.js Express server acting as a SMTP client (`Nodemailer`) delivering professional transaction emails via a pool of Gmail SMTP relays.
-  - Express security-hardened middleware (`Helmet`, `Express Rate Limit` anti-spam rules).
+</p>
 
 ---
 
-## 🌐 System Architecture
+# 🌐 Live Demo
 
-```mermaid
-graph TD
-    subgraph Client [Client-Side: React 19 + Vite]
-        UI[App Shell & Router] --> DB_PAGE[Bento Dashboard]
-        UI --> LOCKER[Private Locker]
-        UI --> FOCUS[Focus Room]
-        UI --> CHAT_WIDGET[AI Chatbot Widget]
-        
-        LOCKER -->|Client-Side AES Encryption| LOCAL_STORAGE[(Local Storage)]
-        DB_PAGE --> LOCAL_STORAGE
-    end
+### 🔗 https://studyfocus-org.vercel.app/
 
-    subgraph Backend [Backend-Side: Node + Express]
-        API_GATEWAY[Express Server] -->|Rate Limiter & Security Headers| ROUTER[Route Handlers]
-        ROUTER -->|Gmail SMTP Host| SMTP[Nodemailer Transporter]
-        ROUTER -->|Rotated Key ClientPool| GEMINI[Gemini GenAI Client]
-    end
+---
 
-    subgraph Cloud [Cloud Services]
-        FIREBASE_AUTH[Firebase Auth]
-        FIRESTORE[(Cloud Firestore)]
-        GEMINI_API[Google Gemini Models]
-    end
+# 📖 About
 
-    UI -->|onAuthStateChanged| FIREBASE_AUTH
-    LOCAL_STORAGE -->|Debounced Auto-Sync| FIRESTORE
-    CHAT_WIDGET -->|fetch /api/chat| API_GATEWAY
-    ROUTER -->|Firebase Admin SDK| FIRESTORE
-    GEMINI -->|Generative Inquiry| GEMINI_API
-    SMTP -->|Deliver OTP & Reminders| USER_EMAIL[Student's Email Inbox]
+StudyFocus is a modern AI-powered academic productivity platform designed to help students stay focused, organized, and productive.
+
+The platform combines AI, smart scheduling, Pomodoro focus sessions, encrypted private notes, study analytics, reminders, and an intelligent chatbot into one beautiful dashboard.
+
+Built with React, Vite, Express, Firebase, and Google Gemini AI, StudyFocus delivers a smooth and responsive experience across desktop, tablet, and mobile devices.
+
+---
+
+# ✨ Features
+
+## 📊 Smart Dashboard
+
+- Study Analytics
+- Daily Progress
+- Weekly Report
+- Monthly Report
+- Yearly Statistics
+- Beautiful Bento Layout
+- Live Clock
+- Responsive Cards
+
+---
+
+## 🤖 AI Study Assistant
+
+- Gemini AI Integration
+- AI Study Planner
+- AI Question Answering
+- Topic Explanation
+- Smart Suggestions
+- Automatic Study Plan
+
+---
+
+## ⏰ Focus Room
+
+- Pomodoro Timer
+- Focus Music
+- YouTube Integration
+- Ambient Sounds
+- Session Tasks
+- Productivity Tracking
+
+---
+
+## 🔐 Private Locker
+
+- AES-256 Encryption
+- Pattern Lock
+- Secure Notes
+- Local Encryption
+- Privacy First
+
+---
+
+## 📅 Smart Scheduler
+
+- Daily Planner
+- Weekly Planner
+- Timetable
+- Study Blocks
+- Auto Save
+
+---
+
+## 💊 Reminder System
+
+- Medicine Reminder
+- Study Reminder
+- Email Reminder
+- Daily Notification
+
+---
+
+## 🎨 Modern UI
+
+- Glassmorphism
+- Smooth Animation
+- Dark Mode
+- Light Mode
+- Responsive Design
+- Beautiful Gradients
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React 19
+- Vite
+- CSS3
+- JavaScript
+- React Router
+
+## Backend
+
+- Node.js
+- Express.js
+- Nodemailer
+- Helmet
+- Rate Limiter
+
+## Database
+
+- Firebase Firestore
+- Firebase Authentication
+
+## AI
+
+- Google Gemini API
+
+## Security
+
+- AES-256 Encryption
+- Helmet
+- Express Rate Limit
+
+---
+
+# 🚀 Live Features
+
+✅ AI Chatbot
+
+✅ Focus Room
+
+✅ Study Planner
+
+✅ Dashboard
+
+✅ Analytics
+
+✅ Encrypted Locker
+
+✅ Email Reminder
+
+✅ Firebase Authentication
+
+✅ Responsive UI
+
+---
+
+# 📂 Project Structure
+
+```
+StudyFocus/
+
+├── src/
+├── public/
+├── server/
+├── components/
+├── pages/
+├── assets/
+├── hooks/
+├── utils/
+├── firebase/
+├── package.json
+└── README.md
 ```
 
 ---
 
-## ⚙️ Environment Variables Config
+# ⚙ Environment Variables
 
-Create a `.env` file in the root directory. This contains both frontend (prefixed with `VITE_` for exposure) and backend secure configurations.
+```
+SMTP_HOST=
 
-```env
-# ── Server-Side SMTP Settings (Gmail app password) ──
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=465
-SMTP_USER=your-email@gmail.com
-SMTP_PASS=your-gmail-app-password
-API_PORT=3001
+SMTP_PORT=
 
-# ── Firebase Credentials (Client-Side) ──
-VITE_FIREBASE_API_KEY=AIzaSy...
-VITE_FIREBASE_AUTH_DOMAIN=your-app.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your-project-id
-VITE_FIREBASE_STORAGE_BUCKET=your-app.firebasestorage.app
-VITE_FIREBASE_MESSAGING_SENDER_ID=1234567890
-VITE_FIREBASE_APP_ID=1:123456:web:abcd...
-VITE_FIREBASE_DATABASE_URL=https://your-project-rtdb.firebaseio.com
+SMTP_USER=
 
-# ── Google Gemini Rotated API Keys ──
-VITE_GEMINI_API_KEY=AIzaSyPrimary...
-GEMINI_API_KEY_2=AIzaSySecond...
-GEMINI_API_KEY_3=AIzaSyThird...
-# Add up to GEMINI_API_KEY_12 for round-robin failover
+SMTP_PASS=
 
-# ── Firebase Admin SDK Service Account JSON (Private) ──
-FIREBASE_SERVICE_ACCOUNT='{
-  "type": "service_account",
-  "project_id": "your-project-id",
-  "private_key_id": "...",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0B...",
-  "client_email": "firebase-adminsdk-fbsvc@your-project.iam.gserviceaccount.com"
-}'
+VITE_FIREBASE_API_KEY=
+
+VITE_FIREBASE_AUTH_DOMAIN=
+
+VITE_FIREBASE_PROJECT_ID=
+
+VITE_FIREBASE_STORAGE_BUCKET=
+
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+
+VITE_FIREBASE_APP_ID=
+
+VITE_GEMINI_API_KEY=
 ```
 
 ---
 
-## 🚀 Installation & Local Development
+# 📦 Installation
 
-### 1. Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
+Clone Repository
 
-### 2. Install Dependencies
-Install all package packages for both frontend components and server routes:
-```bash
+```
+git clone https://github.com/yourusername/studyfocus.git
+```
+
+Install Packages
+
+```
 npm install
 ```
 
-### 3. Run Development Server
-StudyFocus runs concurrently. Launching the dev script starts both the **Vite React UI** and the **Express backend API server** together:
-```bash
+Run Development Server
+
+```
 npm run dev
 ```
-* The Client will launch at: `http://localhost:5173`
-* The Server will run at: `http://localhost:3001` (Vite routes `/api` proxies to 3001)
 
-### 4. Build for Production
-To bundle the frontend application with optimized static assets and oxlint checks:
-```bash
+Production Build
+
+```
 npm run build
 ```
 
 ---
 
-## ⚡ Showcase: Micro-Animations & CSS Tricks
+# 📱 Responsive Design
 
-### 1. Real-Time 3D Analog Clock Rotations
-The bento clock calculates exact geometry coordinates dynamically and applies standard CSS 3D transforms:
-```javascript
-// Dynamic degree angles calculated inside React rendering
-const hrsAngle = (time.getHours() % 12) * 30 + time.getMinutes() * 0.5;
-const minsAngle = time.getMinutes() * 6 + time.getSeconds() * 0.1;
-const secsAngle = time.getSeconds() * 6;
-```
-```css
-/* Sleek 3D Plate with glow */
-.clock-3d-plate {
-  transform: rotateX(10deg) rotateY(-5deg);
-  box-shadow: 
-    -10px 10px 20px rgba(0,0,0,0.3),
-    inset 0 0 20px rgba(255,255,255,0.05);
-  transition: transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-```
+✔ Desktop
 
-### 2. Safe Cryptographic Key Rotation (Backend)
-The backend routes chat queries using an automated API key cycling buffer:
-```javascript
-const GEMINI_API_KEYS = [
-  process.env.VITE_GEMINI_API_KEY,
-  process.env.GEMINI_API_KEY_2,
-  // ... Up to key 12
-].filter(Boolean);
+✔ Laptop
 
-let currentKeyIndex = 0;
+✔ Tablet
 
-function getNextGeminiClient() {
-  const apiKey = GEMINI_API_KEYS[currentKeyIndex];
-  currentKeyIndex = (currentKeyIndex + 1) % GEMINI_API_KEYS.length;
-  return new GoogleGenAI({ apiKey });
-}
-```
+✔ Mobile
 
 ---
 
-## 🤝 Contributing
-1. Fork this Repository.
-2. Create your Feature Branch: `git checkout -b feature/AmazingFeature`
-3. Commit your Changes: `git commit -m 'Add some AmazingFeature'`
-4. Push to the Branch: `git push origin feature/AmazingFeature`
-5. Open a Pull Request.
+# 🔒 Security
+
+- Firebase Authentication
+- AES-256 Encryption
+- Pattern Lock
+- Helmet Protection
+- Express Rate Limiter
+- Secure API
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+# 🤖 AI Features
 
-Developed by ❤️ Satyajit Pratihar
+- AI Chat
+- AI Planner
+- Smart Study Recommendation
+- Subject Explanation
+- Gemini AI Integration
+- Fast Response
+
+---
+
+# 🎯 Why StudyFocus?
+
+✔ Smart Study Planning
+
+✔ Beautiful UI
+
+✔ Secure Notes
+
+✔ AI Assistant
+
+✔ Productivity Dashboard
+
+✔ Email Reminder
+
+✔ Pomodoro Timer
+
+✔ Responsive Design
+
+✔ Firebase Integration
+
+✔ Real-time Database
+
+---
+
+# 📈 Future Updates
+
+- Voice Assistant
+- AI PDF Notes
+- OCR Scanner
+- AI Flashcards
+- Attendance Tracker
+- Group Study
+- Cloud Backup
+- Mobile App
+- Calendar Sync
+- AI Exam Prediction
+
+---
+
+# 🤝 Contributing
+
+1. Fork Repository
+
+2. Create Feature Branch
+
+```
+git checkout -b feature/NewFeature
+```
+
+3. Commit Changes
+
+```
+git commit -m "Added New Feature"
+```
+
+4. Push Changes
+
+```
+git push origin feature/NewFeature
+```
+
+5. Open Pull Request
+
+---
+
+# 🌟 Show Your Support
+
+If you like this project,
+
+⭐ Star this Repository
+
+🍴 Fork it
+
+📢 Share it
+
+---
+
+# 👨‍💻 Developer
+
+## Satyajit Pratihar
+
+💻 Full Stack Developer
+
+🤖 AI Enthusiast
+
+📊 Data Analytics Learner
+
+🎓 Information Technology Student
+
+---
+
+# 🌐 Website
+
+## https://studyfocus-org.vercel.app/
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<p align="center">
+
+## ⭐ If you like this project, don't forget to Star the repository ⭐
+
+Made with ❤️ by **Satyajit Pratihar**
+
+</p>
