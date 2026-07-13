@@ -190,13 +190,7 @@ StudyFocus/
 # ⚙ Environment Variables
 
 ```
-SMTP_HOST=
 
-SMTP_PORT=
-
-SMTP_USER=
-
-SMTP_PASS=
 
 VITE_FIREBASE_API_KEY=
 
