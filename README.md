@@ -10,7 +10,6 @@
 ![MIT License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
 
 </p>
-
 <p align="center">
 
 ### 🚀 Smart Study Planner • AI Assistant • Focus Room • Secure Notes • Study Analytics
